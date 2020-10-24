@@ -1,118 +1,121 @@
-html,
-body {
-    background-color: #5BBDF9;
-    background-repeat: repeat;
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    width: 100%;
-    height: 100%;
-}
-
-
-/*Style des balises, traits, police*/
-
-h1,
-h2 {
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-
-hr {
-    background-color: white;
-    width: 30%;
-    height: 1px;
-}
-
-#mainblock {
-    width: 100%;
-    height: 100%;
-}
-
-
-/*NAV BAR*/
-
-.navbar-dark .navbar-nav .nav-link {
-    color: white;
-    letter-spacing: 2px;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #1CCFEB;
-}
-
-#homepage {
-    height: 100%;
-    width: 100%;
-    background-color: #17a2b8;
-}
-
-#aboutme {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-
-/* #profilpicture
-{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-} */
-
-#aboutme img {
-    width: 50%;
-    border-radius: 40px;
-}
-
-#blockexperiences {
-    width: 100%;
-    height: 100%;
-    background-color: #1CCFEB;
-}
-
-#formations {
-    width: 100%;
-    height: 100%;
-}
-
-#skillsleft {
-    width: 30%;
-}
-
-#skillsleft img {
-    width: 10%;
-}
-
-#skillsright {
-    width: 30%;
-}
-
-@media screen and (max-width: 960px) {
-    hr {
-        width: 70%;
-    }
-    /* #aboutme img {
-        width: 100%
-    } */
-    #skillsleft,
-    #skillsright {
-        width: 100%;
-    }
-}
-
-
-}
-@media screen and (max-width: 576px) {
-    h1 {
-        font-size: 0.5em;
-        margin: 0;
-    }
-    
-    #skillsleft,
-    #skillsright {
-        width: 100%;
-    }
-}
+                html,
+                body {
+                    background-color: #5BBDF9;
+                    background-repeat: repeat;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1em;
+                    width: 100%;
+                    height: 100%;
+                }
+                /*Style des balises, traits, police*/
+                
+                h1,
+                h2,
+                h3,
+                h4 {
+                    color: white;
+                    text-align: center;
+                    font-weight: bold;
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                h2 {}
+                
+                hr {
+                    background-color: white;
+                    width: 30%;
+                    height: 1px;
+                }
+                
+                p {
+                    font-size: 18px;
+                }
+                
+                #MainBlock {
+                    width: 100%;
+                }
+                /*NAV BAR*/
+                
+                .navbar-dark .navbar-nav .nav-link {
+                    color: white;
+                    letter-spacing: 4px;
+                }
+                
+                .navbar-dark .navbar-nav .nav-link:hover {
+                    color: #1CCFEB;
+                }
+                
+                #HomePage {
+                    height: 100%;
+                    width: 100%;
+                    background-color: #17a2b8;
+                }
+                
+                #AboutMe {
+                    width: 100%;
+                    height: auto;
+                }
+                
+                #AboutMe img {
+                    border-radius: 40px;
+                }
+                
+                #BlockExperiences {
+                    min-width: 50%;
+                    background-color: #17a2b8;
+                }
+                
+                #formations {
+                    min-width: 50%;
+                }
+                /* SKILLS */
+                
+                #skills {
+                    width: 100%;
+                }
+                
+                #skills .progress {
+                    width: 50%;
+                }
+                
+                #SkillsLeft {
+                    width: 50%;
+                }
+                
+                #SkillsLeft img {
+                    width: 5%;
+                }
+                
+                #SkillsRight {
+                    width: 50%;
+                }
+                
+                #BlocContact {
+                    width: 100%;
+                }
+                /* MEDIA */
+                
+                @media screen and (max-width: 960px) {
+                    #AboutMe img {
+                        width: 100%
+                    }
+                    #SkillsLeft,
+                    #SkillsRight {
+                        width: 100%;
+                    }
+                    #AboutMe p {
+                        text-align: center;
+                    }
+                }
+                
+                @media screen and (max-width: 576px) {
+                    h1 {
+                        font-size: none;
+                        margin: 0;
+                    }
+                    #SkillsLeft,
+                    #SkillsRight {
+                        width: 100%;
+                    }
+                }
