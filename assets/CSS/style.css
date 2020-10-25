@@ -1,121 +1,216 @@
-                html,
-                body {
-                    background-color: #5BBDF9;
-                    background-repeat: repeat;
-                    margin: 0;
-                    padding: 0;
-                    font-size: 1em;
-                    width: 100%;
-                    height: 100%;
-                }
-                /*Style des balises, traits, police*/
-                
-                h1,
-                h2,
-                h3,
-                h4 {
-                    color: white;
-                    text-align: center;
-                    font-weight: bold;
-                    font-family: 'Roboto', sans-serif;
-                }
-                
-                h2 {}
-                
-                hr {
-                    background-color: white;
-                    width: 30%;
-                    height: 1px;
-                }
-                
-                p {
-                    font-size: 18px;
-                }
-                
-                #MainBlock {
-                    width: 100%;
-                }
-                /*NAV BAR*/
-                
-                .navbar-dark .navbar-nav .nav-link {
-                    color: white;
-                    letter-spacing: 4px;
-                }
-                
-                .navbar-dark .navbar-nav .nav-link:hover {
-                    color: #1CCFEB;
-                }
-                
-                #HomePage {
-                    height: 100%;
-                    width: 100%;
-                    background-color: #17a2b8;
-                }
-                
-                #AboutMe {
-                    width: 100%;
-                    height: auto;
-                }
-                
-                #AboutMe img {
-                    border-radius: 40px;
-                }
-                
-                #BlockExperiences {
-                    min-width: 50%;
-                    background-color: #17a2b8;
-                }
-                
-                #formations {
-                    min-width: 50%;
-                }
-                /* SKILLS */
-                
-                #skills {
-                    width: 100%;
-                }
-                
-                #skills .progress {
-                    width: 50%;
-                }
-                
-                #SkillsLeft {
-                    width: 50%;
-                }
-                
-                #SkillsLeft img {
-                    width: 5%;
-                }
-                
-                #SkillsRight {
-                    width: 50%;
-                }
-                
-                #BlocContact {
-                    width: 100%;
-                }
-                /* MEDIA */
-                
-                @media screen and (max-width: 960px) {
-                    #AboutMe img {
-                        width: 100%
-                    }
-                    #SkillsLeft,
-                    #SkillsRight {
-                        width: 100%;
-                    }
-                    #AboutMe p {
-                        text-align: center;
-                    }
-                }
-                
-                @media screen and (max-width: 576px) {
-                    h1 {
-                        font-size: none;
-                        margin: 0;
-                    }
-                    #SkillsLeft,
-                    #SkillsRight {
-                        width: 100%;
-                    }
-                }
+    html,
+    body {
+        background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        width: 100%;
+        height: 100%;
+    }
+    /*Style des balises, traits, police*/
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .modal-title {
+        color: #7f53ac;
+    }
+    
+    hr {
+        background-color: white;
+        height: 1px;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    #MainBlock {
+        width: 100%;
+    }
+    /*NAV BAR*/
+    
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+        letter-spacing: 4px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #1CCFEB;
+    }
+    
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #HomePage {
+        height: 100%;
+        width: 100%;
+        background-color: #17a2b8;
+    }
+    
+    #AboutMe {
+        height: auto;
+    }
+    
+    #AboutMe p {
+        font-size: 1.3rem;
+    }
+    
+    #AboutMe img {
+        border-radius: 40px;
+    }
+    
+    #BlockExperiences {
+        min-width: 50%;
+        padding-top: 7%;
+    }
+    
+    #BlockFormations {
+        min-width: 50%;
+        margin-top: 7%;
+    }
+    /* SKILLS */
+    
+    #skills {
+        width: 100%;
+    }
+    
+    #SkillsLeft {
+        width: 50%;
+    }
+    
+    #SkillsRight {
+        width: 50%;
+    }
+    
+    #BlocContact {
+        width: 100%;
+        color: #343a40;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+        font-weight: bold;
+        padding-top: 6px;
+    }
+    /* MEDIA */
+    
+    @media screen and (max-width: 576px) {
+        h1 {
+            font-size: none;
+            margin: 0;
+        }
+        #SkillsLeft,
+        #SkillsRight {
+            width: 100%;
+        }
+        #BlockExperiences {
+            background-color: #17a3b81a;
+        }
+    }
+    
+    @media screen and (max-width: 960px) {
+        #AboutMe img {
+            width: 100%
+        }
+        #AboutMe p {
+            font-size: 18px;
+        }
+        #SkillsLeft,
+        #SkillsRight {
+            width: 100%;
+        }
+    }
+    
+    .modal-window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 1;
+        pointer-events: none;
+        transition: all 0.3s;
+        header {
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 150%;
+            margin: 0 0 15px;
+        }
+    }
+    /* Demo Styles */
+    
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container>.btn {
+        background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+        /* padding: 1em 1.5em; */
+        border-radius: 8px;
+        text-decoration: none;
+        border-width: 6px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        i {
+            padding-right: 0.3em;
+        }
+    }
+    
+    .modal-footer .btn {
+        background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+        padding: 1em 1.5em;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        {
+            padding-right: 0.9em;
+        }
+    }
+    
+    .progress {
+        background: rgba(0, 0, 0, 0.514);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 3px;
+        display: flex;
+        height: 40px;
+        width: 500px;
+    }
+    
+    .progress-value {
+        animation: load 3s normal forwards;
+        border-radius: 100px;
+        background: #effdff;
+        height: 30px;
+        width: 100;
+    }
+    
+    @keyframes load {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 80%;
+        }
+    }
