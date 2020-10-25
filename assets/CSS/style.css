@@ -269,6 +269,9 @@ li {
     }
 }
 
+
+/* Modal */
+
 .modal-window {
     position: fixed;
     top: 0;
@@ -287,6 +290,10 @@ li {
         font-size: 150%;
         margin: 0 0 15px;
     }
+}
+
+.modal {
+    background-image: url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/01/EulerTea.gif);
 }
 
 
