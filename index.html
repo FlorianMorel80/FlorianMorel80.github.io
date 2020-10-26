@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/custom-css-bootstrap-magic-2020-10-23.css">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="assets/img/picto/favicon.ico">
     <link rel="stylesheet" href="assets/CSS/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
@@ -22,8 +25,9 @@
             <a class="navbar-brand" href="#">FM</a>
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/img/picto/harry-potter.png" alt="Wizard menu bruger">
             </button>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -53,6 +57,7 @@
     <div id="MainBlock" class="h-100">
 
 
+
         <!-- Home Page -->
         <section id="HomePage" class="text-center h-100">
             <div class="jumbotron jumbotron-fluid row align-items-center m-2 px-center h-100">
@@ -69,22 +74,28 @@
 
 
         <!--ABOUT ME -->
-
         <section id="AboutMe" class="container col-12 col-sm-12 col-xl-12 p-4 text-light">
             <h2>About me</h2>
 
             <div class="col-12 col-lg-12 pt-2"> </div>
 
-            <p class="col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto my-auto text-justify">Je suis (serais prochainement) développeur web junior. J'adore la musique, le cinéma et parfois, effectuer des créations en collage ou effectuer des dessins avec de la laine (oui oui c'est possible) ! <br /> Mais ce que j'aime par dessus tout,
-                c'est créer mon nouveau CV sous Bootstrap et le rendre responsive afin que les futur(e)s employeurs puissent accéder à mon CV depuis n'importe quelle plateforme ! Incroyable n'est ce pas ? :) </p>
+            <p class="col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto my-4 text-justify">Je suis
+                (serais prochainement) développeur web junior. J'adore la musique, le cinéma (SF, fantastique et
+                dystopique) et
+                parfois, effectuer des créations en collage ou effectuer des dessins avec de la laine (oui oui c'est
+                possible) ! <br /> Mais ce que j'aime par dessus tout,
+                c'est créer mon nouveau CV sous Bootstrap et le rendre responsive afin que les futur(e)s employeurs
+                puissent accéder à mon CV depuis n'importe quelle plateforme ! </p>
             <div class="col-12 col-lg-2"></div>
 
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-8 text-right m-auto">
 
-                        <img class="col-12 col-xl-10 mx-auto my-auto" src="assets/img/Profile Picture/FB_IMG_1602183740928.jpg" alt="Photographie de Florian Morel">
+                        <img class="col-12 col-xl-10 mx-auto my-auto"
+                            src="assets/img/Profile Picture/FB_IMG_1602183740928.jpg"
+                            alt="Photographie de Florian Morel">
                     </div>
                     <div class="col-12 col-lg-6 col-xl-4 m-auto p-4 ">
                         <p><strong>Name</strong> : Florian Morel</p>
@@ -92,15 +103,19 @@
                         <p><strong>Location</strong>: Amiens, France, Earth </p>
                     </div>
 
-                    <!--Modal Contact page-->
+
+
+
+                    <!-- Modal Contact page--!>
                     <!-- Button trigger modal -->
-                    <div class="container py-3">
+                    <div class="container py-3 d-flex justify-content-center">
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact">
                             🍵Envie d'un thé ?🍵
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="BlocContact" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+                        <div class="modal fade" id="BlocContact" tabindex="-1" aria-labelledby="ContactLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -126,245 +141,279 @@
 
 
         <!-- BlockExperience -->
-        <div class="row m-auto">
-            <section id="BlockExperiences">
+        <div class="container-fluid">
+            <!-- <div class="row m-auto"> -->
+                <section id="col-12 col-md-12 d-flex col-lg-12">
+                    <section id="BlockExperiences">
 
-                <div class="col-12 col-md-12 col-lg-12 py-4 font-weight-bold text-light">
-                    <h2 class="p-4">Expériences</h2>
+                        <div class="col-12 col-md-12 col-lg-12 py-4 font-weight-bold text-light">
+                            <h2 class="p-4">Expériences</h2>
 
-                    <!--Verisure-->
-                    <h3>Expert Sécurité</h3>
-                    <h4>Verisure - Janvier 2018 à janvier 2020 - CDI</h4>
-                    <ul class="col-12 col-md-10 col-lg-8 col-xl-8 py-4  m-auto">
-                        <li>Réaliser une expertise sécurité</li>
-                        <li>Anayser les besoins</li>
-                        <li>Réaliser l'installation et la programmation du système de sécurité
-                        </li>
-                        <li>Suivre et entretenir la satisfaction clientèle (contact régulier avec le listing client, réaliser les maintenances)
-                        </li>
-                        <li>Etre l'interlocuteur unique entre le client et la société</li>
-                    </ul>
-                    <hr class="col-10 col-sm-7 col-md-5 col-xl-4" />
+                            <!--Verisure-->
+                            <h3>Expert Sécurité</h3>
+                            <h4>Verisure - Janvier 2018 à janvier 2020 - CDI</h4>
+                            <ul class="col-12 col-md-10 col-lg-8 col-xl-10 text-center px-5 py-4  m-auto">
+                                <li>Réaliser une expertise sécurité</li>
+                                <li>Anayser les besoins</li>
+                                <li>Réaliser l'installation et la programmation du système de sécurité
+                                </li>
+                                <li>Suivre et entretenir la satisfaction clientèle (réaliser les maintenances)
+                                </li>
+                                <li>Etre l'interlocuteur unique entre le client et la société</li>
+                            </ul>
+                            <hr class="col-10 col-sm-7 col-md-5 col-xl-4" />
 
-                    <!--SVI-->
-                    <h3>Service Volontaire International</h3>
-                    <h4>Maison des associations - Octobre 2017 - Bénévolat - Chișinău - Moldavie</h4>
-                    <ul class="col-12 col-md-10 col-lg-8 col-xl-8 py-4  m-auto">
-                        <li>Création d'activités au sein d'un centre pour enfants en situation de handicap</li>
-                    </ul>
-                    <hr class="col-10 col-sm-7 col-md-5 col-xl-4" />
+                            <!--SVI-->
+                            <h3>Service Volontaire International</h3>
+                            <h4>MDA - Octobre 2017 - Bénévolat - Chișinău - Moldavie</h4>
+                            <ul class="col-12 col-md-10 col-lg-8 col-xl-10 text-center  py-4 px-5 m-auto">
+                                <li>Création d'activités au sein d'un centre pour enfants en situation de handicap</li>
+                            </ul>
+                            <hr class="col-10 col-sm-7 col-md-5 col-xl-4" />
 
-                    <!--Chef de projet-->
-                    <h3> Assistant Chef de projet web</h3>
-                    <h4>Chapristi - Octobre 2015 à juin 2016 - Alternance - Lille - France</h4>
-                    <ul class="col-12 col-md-10 col-lg-8 col-xl-8 py-4  m-auto">
-                        <li>Conception de projet</li>
-                        <li>Suivi de projet</li>
-                        <li>Accompagnement dans les étapes de production</li>
-                        <li>Intégration de contenus sur les projets à décliner à l'international</li>
-                        <li>Suivi des demandes d'ajustements et correctifs clients</li>
-                        <li>Documents de conception formalisés (arborescence, wireframes)</li>
-                    </ul>
-                </div>
-            </section>
+                            <!--Chef de projet-->
+                            <h3> Assistant Chef de projet web</h3>
+                            <h4>Chapristi - Octobre 2015 à juin 2016 - Alternance - Lille - France</h4>
+                            <ul class="col-12 col-md-10 col-lg-8 col-xl-10 text-center  py-4 px-5 m-auto">
+                                <li>Conception de projet</li>
+                                <li>Suivi de projet</li>
+                                <li>Accompagnement dans les étapes de production</li>
+                                <li>Intégration de contenus sur les projets à décliner à l'international</li>
+                                <li>Suivi des demandes d'ajustements et correctifs clients</li>
+                                <li>Documents de conception formalisés (arborescence, wireframes)</li>
+                            </ul>
+                        </div>
+                    </section>
 
 
-            <!--Mes formations-->
+                    <!--Mes formations-->
+                    <div class="container-fluid">
+                        <section id="BlockFormations">
+                            <div class="col-12 d-flex col-md-12 col-lg-12  m-auto">
+                                <div id="formations">
+                                    <h2 class="p-4">Formations</h2>
+                                    <h3>Formation en cours : "Développeur Web et Web Mobile</h3>
+                                    <h4>La Manu - Octobre 2020 à mars 2021 - Amiens</h4><br />
+                                    <hr /><br />
 
-            <section id="BlockFormations">
-                <div class="col-12 col-md-12 col-lg-10 p-4 m-auto">
-                    <div id="formations">
-                        <h2 class="p-4">Formations</h2>
-                        <h3>Formation en cours : "Développeur Web et Web Mobile</h3>
-                        <h4>La Manu - Octobre 2020 à mars 2021 - Amiens</h4><br />
-                        <hr /><br />
+                                    <h3>Obtention de la Licence E-Commerce et marketing numérique</h3>
+                                    <h4>IUT Roubaix - Septembre 2015 à juin 2016</h4><br />
+                                    <hr /><br />
 
-                        <h3>Obtention de la Licence E-Commerce et marketing numérique</h3>
-                        <h4>IUT Roubaix - Septembre 2015 à juin 2016</h4><br />
-                        <hr /><br />
-
-                        <h3>Obtention du DUT Techniques de Commercialisation</h3>
-                        <h4>IUT Amiens - Septembre 2013 à juin 2015</h4>
+                                    <h3>Obtention du DUT Techniques de Commercialisation</h3>
+                                    <h4>IUT Amiens - Septembre 2013 à juin 2015</h4>
+                                </div>
+                            </div>
                     </div>
-                </div>
-                <!--Modal Contact page-->
-                <!-- Button trigger modal -->
-                <div class="container py-3">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact">
-                        ☕Ou plutôt d'un café ?☕
-                    </button>
+                    <!--Modal Contact page-->
+                    <!-- Button trigger modal -->
+                    <div class="container py-3 d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact">
+                            ☕Ou plutôt d'un café ?☕
+                        </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade bg-dark" id="contact" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title" id="ContactLabel"> Vend Sacrieur lvl 12</h3>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">9&frac34
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <section id="BlocContact">
-                                        <div id="formulaire">
-                                            <form action="contact.php" method="POST">
-                                                <fieldset>
-                                                    <legend>Contact</legend>
+                        <!-- Modal -->
+                        <div class="modal fade bg-dark" id="contact" tabindex="-1" aria-labelledby="ContactLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="ContactLabel">Contactez moi</h3>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">9&frac34
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <section id="BlocContact">
+                                            <div id="formulaire">
+                                                <form action="contact.php" method="POST">
+                                                    <fieldset>
+                                                        <legend>Contact</legend>
 
-                                                    <ol>
-                                                        <li>
-                                                            <input type="radio" name="sexe" id="madame" value="Madame" required>
-                                                            <label for="madame">Madame</label>
+                                                        <ol>
+                                                            <li>
+                                                                <input type="radio" name="sexe" id="madame"
+                                                                    value="Madame" required>
+                                                                <label for="madame">Madame</label>
 
 
 
-                                                            <input type="radio" name="sexe" id="monsieur" value="Monsieur" required>
-                                                            <label for="monsieur">Monsieur</label>
+                                                                <input type="radio" name="sexe" id="monsieur"
+                                                                    value="Monsieur" required>
+                                                                <label for="monsieur">Monsieur</label>
 
-                                                            <input type="radio" name="sexe" id="ecole" value="Ecole" required>
-                                                            <label for="ecole">Ecole<a
-                                                                    href="https://i.imgflip.com/4jrxm4.jpg"
-                                                                    target="_blank">?</a></label>
-                                                        </li>
-                                                        <li>
-                                                            <label for="nom"></label>
-                                                            <input type="text" name="nom" id="nom" placeholder="Nom" required />
-                                                        </li>
-                                                        <li>
-                                                            <label for="prenom"></label>
-                                                            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required />
-                                                        </li>
-                                                        <li>
-                                                            <label for="mail"></label>
-                                                            <input type="email" name="mail" id="mail" placeholder="Adresse mail" required />
-                                                        </li>
-                                                    </ol>
-                                                    <label for="message">Votre message :</label>
-                                                    <textarea rows="3" id="message" required></textarea>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Hop! </button>
+                                                                <input type="radio" name="sexe" id="ecole" value="Ecole"
+                                                                    required>
+                                                                <label for="ecole">Ecole<a
+                                                                        href="https://i.imgflip.com/4jrxm4.jpg"
+                                                                        target="_blank">?</a></label>
+                                                            </li>
+                                                            <li>
+                                                                <label for="nom"></label>
+                                                                <input type="text" name="nom" id="nom" placeholder="Nom"
+                                                                    required />
+                                                            </li>
+                                                            <li>
+                                                                <label for="prenom"></label>
+                                                                <input type="text" name="prenom" id="prenom"
+                                                                    placeholder="Prénom" required />
+                                                            </li>
+                                                            <li>
+                                                                <label for="mail"></label>
+                                                                <input type="email" name="mail" id="mail"
+                                                                    placeholder="Adresse mail" required />
+                                                            </li>
+                                                        </ol>
+                                                        <label for="message"></label>
+                                                        <textarea rows="3" id="message" placeholder="Un message ?"
+                                                            required></textarea>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Hop! 👋🏼 </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                </section>
+            <!-- </div> -->
         </div>
 
 
         <!--SKILLS-->
-        <div class="row m-auto">
-            <section id="skills">
+        <div class="container-fluid">
+            <div class="row my-5">
+
 
                 <!-- leftskills -->
+                <div class="col-12 col-md-12 col-lg-8 mx-auto text-center font-weight-bold text-light">
+                    <h2>Informatique</h2>
 
-                <div id="SkillsLeft">
+                    <p>HTML</p>
 
-                    <div class="col-12 col-md-12 col-lg-12 mx-auto text-center font-weight-bold text-light">
-                        <h2>Informatique</h2>
-
-                        <p>HTML</p>
-
-                        <div class="progress mx-auto">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%</div>
-                        </div>
-
-
-                        <p>CSS</p>
-                        <div class="progress mx-auto">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
-                        </div>
-
-                        <p>Javascript</p>
-                        <div class="progress mx-auto">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
-                        </div><br />
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 30%">30%</div>
+                    </div>
 
 
-                        <h2>Gestion de projet web</h2>
+                    <p>CSS</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 20%">20%</div>
+                    </div>
 
-                        <p>Wireframe</p>
-                        <div class="progress mx-auto">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-                        </div>
-
-                        <p>Communication</p>
-                        <div class="progress mx-auto">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
-                        </div>
-
-                        <p>KPI</p>
-                        <div class="progress mx-auto">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
-                        </div>
+                    <p>Javascript</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 0%">0%</div>
                     </div><br />
-                </div>
 
 
-                <!-- Rightskills -->
-                <div id="SkillsRight">
-                    <div class="col-12 col-md-12 col-lg-12 mx-auto text-center font-weight-bold text-light">
-                        <div class="commerciales">
+                    <h2>Gestion de projet web</h2>
 
-                            <h2>Commerciales</h2>
+                    <p>Wireframe</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 70%">70%</div>
+                    </div>
 
-                            <p>Prospection</p>
-                            <div class="progress mx-auto">
-                                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
-                            </div>
+                    <p>Communication</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 40%">40%</div>
+                    </div>
 
-
-                            <p>Négociation</p>
-                            <div class="progress mx-auto">
-                                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-                            </div>
-
-
-                            <p>Suivi clientèle</p>
-                            <div class="progress mx-auto">
-                                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
-                            </div>
-
-
-
-                            <div class=" creativite ">
-                                <h2>Créativités</h2>
-                                <p>Veille technologique</p>
-                                <div class="progress mx-auto">
-                                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
-                                </div>
+                    <p>KPI</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 40%">40%</div>
+                    </div>
+                </div><br />
+            </div>
+        </div>
 
 
 
-                                <p>Curiosité</p>
-                                <div class="progress mx-auto">
-                                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
-                                </div>
+        <!-- Rightskills -->
+        <div class="container-fluid">
+            <div class="col-12 col-md-12 col-lg-8 mx-auto text-center font-weight-bold text-light">
+                <div class="commerciales">
+
+                    <h2>Commerciales</h2>
+
+                    <p>Prospection</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 90%">90%</div>
+                    </div>
 
 
+                    <p>Négociation</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 80%">80%</div>
+                    </div>
 
-                                <p>Photoshop</p>
-                                <div class="progress mx-auto">
-                                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
-                                </div>
-                            </div>
+
+                    <p>Suivi clientèle</p>
+                    <div class="progress mx-auto">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 70%">70%</div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-12 my-auto text-center font-weight-bold text-light">
+                    <div class="creativite">
+                        <h2>Créativités</h2>
+                        <p>Veille technologique</p>
+                        <div class="progress mx-auto">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 100%">100%</div>
+                        </div>
+
+
+                        <p>Curiosité</p>
+                        <div class="progress mx-auto">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 90%">90%</div>
+                        </div>
+
+
+                        <p>Photoshop</p>
+                        <div class="progress mx-auto">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 20%">20%</div>
                         </div>
                     </div>
-            </section>
+                </div>
             </div>
+        </div>
+    </div>
+
+
+    <!--PORTFOLIO-->
 
 
 
-            <!--PORTFOLIO-->
 
-
-
-
-            <!-- <div id=portfolio>
+    <!-- <div id=portfolio>
                 <div id=blocleft>
                     <div class=" title ">
                         <h2>Project Development </h2>
@@ -407,26 +456,29 @@
                 </div>
             </div>
 
-        </div> -->
+         -->
+    </div>
 
 
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity=" sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous">
+    </script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity=" sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin=" anonymous ">
+    </script>
 
-            <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity=" sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous">
-            </script>
-            <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity=" sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin=" anonymous ">
-            </script>
-
-            <!--Fonction nav bar-->
-            <script>
-                $(document).click(function(event) {
-                    var clickover = $(event.target);
-                    var $navbar = $(".navbar-collapse");
-                    var _opened = $navbar.hasClass("in");
-                    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-                        $navbar.collapse('hide');
-                    }
-                });
-            </script>
+    <!--Fonction nav bar-->
+    <script>
+        $(document).ready(function () {
+            $(document).click(function (event) {
+                var clickover = $(event.target);
+                var _opened = $(".navbar-collapse").hasClass("show");
+                if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                    $(".navbar-toggler").click();
+                }
+            });
+        });
+    </script>
 
 </body>
 
